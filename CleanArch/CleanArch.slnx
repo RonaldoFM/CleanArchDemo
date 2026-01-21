@@ -4,9 +4,12 @@
     <Project Path="CleanArch.Application/CleanArch.Application.csproj" Id="dca6fd72-8c0c-4132-8b31-f85024f50f65" />
   </Folder>
   <Folder Name="/Domain/">
+    <Project Path="CleanArch.Domain.Core/CleanArch.Domain.Core.csproj" Id="afed3572-7660-4f9d-adb7-a61820e4ad73" />
     <Project Path="CleanArch.Domain/CleanArch.Domain.csproj" Id="84583e68-3552-4e5f-8b95-84f50ce26c12" />
   </Folder>
-  <Folder Name="/Infra.Bus/" />
+  <Folder Name="/Infra.Bus/">
+    <Project Path="CleanArch.Infra.Bus/CleanArch.Infra.Bus.csproj" Id="b8f95eaf-5c55-4871-83dd-166f9654b533" />
+  </Folder>
   <Folder Name="/Infra.Data/">
     <Project Path="CleanArch.Infra.Data/CleanArch.Infra.Data.csproj" Id="eca5eba3-13ae-4653-9201-301ed6b8ec23" />
   </Folder>
