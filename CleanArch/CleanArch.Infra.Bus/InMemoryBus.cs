@@ -15,9 +15,5 @@ namespace CleanArch.Infra.Bus
         {
             await _mediator.Send(command);
         }
-        /*public async Task PublishEvent<T>(T @event) where T : Event
-        {
-            await _mediator.Publish(@event);
-        }*/
     }
 }
