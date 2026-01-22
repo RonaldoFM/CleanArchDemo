@@ -25,6 +25,8 @@ builder.Services.AddControllersWithViews();
 // Register application / infra services from the IoC container
 DependencyContainer.RegisterServices(builder.Services);
 
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
