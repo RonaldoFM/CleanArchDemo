@@ -30,9 +30,12 @@ namespace CleanArch.Infra.IoC
             services.AddScoped<ICourseRepository, CourseRepository>();
             services.AddScoped<UniversityDBContext>();
 
-            // AutoMapper Configuration
-            services.AddAutoMapper(typeof(ViewModelToDomainProfile));
-            services.AddAutoMapper(typeof(DomainToViewModelProfile));
+            // AutoMapper Configurations
+            services.AddAutoMapper(cfg =>
+            {
+                cfg.AddProfile<ViewModelToDomainProfile>();
+                cfg.AddProfile<DomainToViewModelProfile>();
+            });
         }
     }
 }
