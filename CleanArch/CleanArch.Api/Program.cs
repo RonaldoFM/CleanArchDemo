@@ -1,6 +1,8 @@
+using CleanArch.Application.AutoMapper;
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IoC;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
